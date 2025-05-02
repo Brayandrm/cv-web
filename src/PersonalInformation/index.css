@@ -1,0 +1,8 @@
+.GridInformation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(49, 49, 49, .2);
+    margin-bottom: 30px;
+}
