@@ -1,0 +1,64 @@
+p{
+  margin: 0;
+  color: #676767;
+}
+h1,h2,h3,h4{
+  margin: 0;
+  color: #544c4c ;
+}
+li{
+  padding-bottom: 8px;
+  text-decoration: none;
+}
+.mainContainer {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100svh;
+}
+.menuProfile {
+  display: grid;
+  grid-template-rows: auto 1fr ;
+  gap: 40px;
+  background-color: #313131;
+  padding: 40px;
+  box-sizing: border-box;
+  height: 100svh;
+}
+.imageProfile {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  padding-left: 10px;
+}
+.profileSection {
+  font-size: 24px;
+}
+.contentSectionsProfile {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 0px);
+  border-bottom: 1px solid #676767;
+
+}
+
+.titlesContents{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 235px;
+  padding: 24px;
+  box-sizing: border-box;
+  word-break: break-word;
+  font-size: 56px;
+  line-height: 66px;
+}
+.Information{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 18px;
+    line-height: 28px;
+    flex-grow: 1;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
