@@ -1,0 +1,9 @@
+.InterestsContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.InterestsList{
+    font-size: 34px;
+    line-height: 44px;
+    margin:  0 70px 70px 0;
+}
