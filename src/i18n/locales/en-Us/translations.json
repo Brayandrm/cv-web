@@ -1,0 +1,11 @@
+{
+  "page": {
+    "translations": {
+      "email": "Correo electronico",
+      "address": "Dirección",
+      "phoneNumber": "Numero de celular",
+      "web": "Web",
+      "description": "Desarrollador FrontEnd con más de un año de experiencia en el diseño y desarrollo de aplicaciones web. Especializado en tecnologías como JavaScript, TypeScript, React, Node.js, MUI, CSS y Docker. Destaco por crear interfaces eficientes y escalables, optimizando la experiencia de usuario y el flujo de trabajo en cada proyecto."
+    }
+  }
+}
