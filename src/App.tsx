@@ -7,9 +7,6 @@ import Experience from "./Experience/Experience";
 import Interests from "./Interests/Interests";
 
 const Profile = () => {
-  const contentColor = "#f0e3d3";
-  const titleColor = "#fbf0e5";
-
   const titles = [
     {
       title: "Personal information",
@@ -64,14 +61,11 @@ const Profile = () => {
           overflowX: "scroll",
         }}
       >
-        <PersonalInformation
-          titleColor={titleColor}
-          contentColor={contentColor}
-        />
-        <Experience titleColor={titleColor} contentColor={contentColor} />
-        <Education titleColor={titleColor} contentColor={contentColor} />
-        <Achievements titleColor={titleColor} contentColor={contentColor} />
-        <Interests titleColor={titleColor} contentColor={contentColor} />
+        <PersonalInformation />
+        <Experience />
+        <Education />
+        <Achievements />
+        <Interests />
         <Icons />
       </section>
     </main>

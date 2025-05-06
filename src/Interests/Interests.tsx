@@ -1,11 +1,6 @@
 import "./index.css";
 
-interface Props {
-  titleColor: string;
-  contentColor: string;
-}
-
-const Interests = ({ titleColor, contentColor }: Props) => {
+const Interests = () => {
   const interestList = [
     "Tegnologia",
     "Basket Ball",
@@ -16,17 +11,10 @@ const Interests = ({ titleColor, contentColor }: Props) => {
 
   return (
     <section className="contentSectionsProfile">
-      <h2
-        id="interests"
-        style={{ backgroundColor: titleColor }}
-        className="titlesContents"
-      >
+      <h2 id="interests" className="titlesContents">
         {"Interests"}
       </h2>
-      <article
-        style={{ backgroundColor: contentColor }}
-        className="Information"
-      >
+      <article className="Information">
         <div className="InterestsContainer">
           {interestList.map((list, index) => (
             <p className="InterestsList" key={index}>

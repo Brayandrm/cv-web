@@ -6,22 +6,13 @@ const AchievementsList = [
   "Crear perfil",
 ];
 
-interface Props {
-  titleColor: string;
-  contentColor: string;
-}
-
-const Achievements = ({ titleColor, contentColor }: Props) => {
+const Achievements = () => {
   return (
     <section className="contentSectionsProfile">
-      <h2
-        id="achievements"
-        style={{ backgroundColor: contentColor }}
-        className="titlesContents"
-      >
+      <h2 id="achievements" className="titlesContents">
         {"Achievements"}
       </h2>
-      <article style={{ backgroundColor: titleColor }} className="Information">
+      <article className="Information">
         <ul style={{ color: "#544c4c" }}>
           {AchievementsList.map((list: string, index: number) => (
             <li key={index}>{list}</li>

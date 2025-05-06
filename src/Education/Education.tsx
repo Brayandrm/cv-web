@@ -34,22 +34,13 @@ const educations = [
   },
 ];
 
-interface Props {
-  titleColor: string;
-  contentColor: string;
-}
-
-const Education = ({ titleColor, contentColor }: Props) => {
+const Education = () => {
   return (
     <section className="contentSectionsProfile">
-      <h2
-        id="education"
-        style={{ backgroundColor: titleColor }}
-        className="titlesContents"
-      >
+      <h2 id="education" className="titlesContents">
         {"Education"}
       </h2>
-      <div className="Information" style={{ backgroundColor: contentColor }}>
+      <div className="Information">
         {educations.map((edu, index) => (
           <ReusableCode key={index} {...edu} />
         ))}

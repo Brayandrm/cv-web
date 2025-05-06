@@ -15,23 +15,23 @@ const ReusableCode = ({
 }: ExperienceProps) => {
   return (
     <main>
-      <div className="ContentInformation">
-        <div className="TimeExperience">{dateRange}</div>
-        <div className="Split" />
-        <div className="ExperienceContainer">
-          <div className="CompanyNameAndRole">
+      <section className="ContentInformation">
+        <p className="TimeExperience">{dateRange}</p>
+        <hr className="Split" />
+        <article className="ExperienceContainer">
+          <section className="CompanyNameAndRole">
             <h3 className="CompanyName"> {company} </h3>
-            <div>{role}</div>
-          </div>
-          <div className="FunctionsCompany">
+            <p>{role}</p>
+          </section>
+          <section className="FunctionsCompany">
             <ul>
               {responsibilities.map((task, index) => (
                 <li key={index}>{task}</li>
               ))}
             </ul>
-          </div>
-        </div>
-      </div>
+          </section>
+        </article>
+      </section>
     </main>
   );
 };

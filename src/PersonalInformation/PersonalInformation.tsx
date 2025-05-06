@@ -1,10 +1,5 @@
 import "./index.css";
 
-interface Props {
-  titleColor: string;
-  contentColor: string;
-}
-
 const infoItems = [
   {
     label: "Email",
@@ -25,17 +20,15 @@ const infoItems = [
   },
 ];
 
-const PersonalInformation = ({ titleColor, contentColor }: Props) => {
+const PersonalInformation = () => {
   return (
     <section className="contentSectionsProfile">
-      <h2
-        id="personalInformation"
-        className="titlesContents"
-        style={{ background: titleColor }}
-      >
-        {"Brayan Daniel Reyes Morera"}
-      </h2>
-      <article style={{ background: contentColor }} className="Information">
+      <header>
+        <h2 id="personalInformation" className="titlesContents">
+          {"Brayan Daniel Reyes Morera"}
+        </h2>
+      </header>
+      <article className="Information">
         <section className="GridInformation">
           {infoItems.map(({ label, value, link }) => (
             <div key={label}>
