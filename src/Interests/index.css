@@ -1,9 +1,27 @@
 .InterestsContainer{
     display: flex;
     flex-wrap: wrap;
+    &{
+        @media (min-width: 1920px) {
+            padding: 0 calc(50vw - 834px) 110px;
+        }
+    }
 }
 .InterestsList{
-    font-size: 34px;
-    line-height: 44px;
+    font-size: 26px;
+    line-height: 36px;
+    color: #313131;
     margin:  0 70px 70px 0;
+    &{
+        @media (min-width: 810px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    &{
+        @media (min-width: 1550px) {
+            font-size: 34px;
+            line-height: 44px;
+        }
+    }
 }

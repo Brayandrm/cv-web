@@ -22,7 +22,7 @@ const educations = [
   {
     dateRange: "12/2021 – 01/2022",
     company: "Especialización Frontend Developer",
-    role: "PLATZI",
+    role: "Platzi",
     responsibilities: [
       "HTML",
       "CSS",
@@ -37,14 +37,18 @@ const educations = [
 const Education = () => {
   return (
     <section className="contentSectionsProfile">
-      <h2 id="education" className="titlesContents">
-        {"Education"}
-      </h2>
-      <div className="Information">
-        {educations.map((edu, index) => (
-          <ReusableCode key={index} {...edu} />
-        ))}
-      </div>
+      <header>
+        <h2 id="education" className="titlesContents">
+          {"Education"}
+        </h2>
+      </header>
+      <section className="Information">
+        <article className="responsive">
+          {educations.map((edu, index) => (
+            <ReusableCode key={index} {...edu} />
+          ))}
+        </article>
+      </section>
     </section>
   );
 };

@@ -5,15 +5,18 @@ const Interests = () => {
     "Tegnologia",
     "Basket Ball",
     "Matematicas",
-    "Natacion",
+    "Natación",
     "Culinaria",
+    "Gastronomia",
   ];
 
   return (
     <section className="contentSectionsProfile">
-      <h2 id="interests" className="titlesContents">
-        {"Interests"}
-      </h2>
+      <header>
+        <h2 id="interests" className="titlesContents">
+          {"Interests"}
+        </h2>
+      </header>
       <article className="Information">
         <div className="InterestsContainer">
           {interestList.map((list, index) => (
