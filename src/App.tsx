@@ -5,10 +5,14 @@ import Achievements from "./Achievements/Achievements";
 import Icons from "./Icons/Icons";
 import Experience from "./Experience/Experience";
 import Interests from "./Interests/Interests";
+import { useState } from "react";
+import { FaCircleArrowUp } from "react-icons/fa6";
+import { IoIosMenu } from "react-icons/io";
 
 const Profile = () => {
-  const contentColor = "#f0e3d3";
-  const titleColor = "#fbf0e5";
+  const [selected, setSelected] = useState("Personal information");
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const titles = [
     {
@@ -35,23 +39,27 @@ const Profile = () => {
 
   return (
     <main className="mainContainer">
-      <section className="menuProfile">
+      <section
+        className={`menuProfile ${menuOpen ? "menuOpen" : "menuClosed"}`}
+      >
         <img
-          src="/profile.png"
+          src="/Brayan.png"
           alt="Signature uploaded"
           className="imageProfile"
         />
+
         <section className="profileSection">
           {titles.map(({ title, link }) => (
-            <nav>
+            <nav key={title}>
               <a
                 href={link}
-                key={title}
-                style={{
-                  cursor: "pointer",
-                  textDecoration: "none",
-                  color: "#ffffff",
+                onClick={() => {
+                  setSelected(title);
+                  setMenuOpen(false);
                 }}
+                className={`menuProfileLink ${
+                  selected === title ? "activeLink" : "inactiveLink"
+                }`}
               >
                 {title}
               </a>
@@ -59,19 +67,24 @@ const Profile = () => {
           ))}
         </section>
       </section>
-      <section
-        style={{
-          overflowX: "scroll",
-        }}
-      >
-        <PersonalInformation
-          titleColor={titleColor}
-          contentColor={contentColor}
-        />
-        <Experience titleColor={titleColor} contentColor={contentColor} />
-        <Education titleColor={titleColor} contentColor={contentColor} />
-        <Achievements titleColor={titleColor} contentColor={contentColor} />
-        <Interests titleColor={titleColor} contentColor={contentColor} />
+      <button aria-label="button arrow" className="btn">
+        <FaCircleArrowUp className="btn buttonMobile" />
+      </button>
+      <section className="headerMobile">
+        <button
+          aria-label="button menu"
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="headerButtonMenu "
+        >
+          <IoIosMenu className="iconMenu" />
+        </button>
+      </section>
+      <section className={`scrollableSection ${menuOpen ? "blurred" : ""}`}>
+        <PersonalInformation />
+        <Experience />
+        <Education />
+        <Achievements />
+        <Interests />
         <Icons />
       </section>
     </main>

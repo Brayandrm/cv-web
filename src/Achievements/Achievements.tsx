@@ -6,28 +6,23 @@ const AchievementsList = [
   "Crear perfil",
 ];
 
-interface Props {
-  titleColor: string;
-  contentColor: string;
-}
-
-const Achievements = ({ titleColor, contentColor }: Props) => {
+const Achievements = () => {
   return (
     <section className="contentSectionsProfile">
-      <h2
-        id="achievements"
-        style={{ backgroundColor: contentColor }}
-        className="titlesContents"
-      >
-        {"Achievements"}
-      </h2>
-      <article style={{ backgroundColor: titleColor }} className="Information">
-        <ul style={{ color: "#544c4c" }}>
-          {AchievementsList.map((list: string, index: number) => (
-            <li key={index}>{list}</li>
-          ))}
-        </ul>
-      </article>
+      <header>
+        <h2 id="achievements" className="titlesContents">
+          {"Achievements"}
+        </h2>
+      </header>
+      <section className="Information">
+        <article className="responsive">
+          <ul>
+            {AchievementsList.map((list: string, index: number) => (
+              <li key={index}>{list}</li>
+            ))}
+          </ul>
+        </article>
+      </section>
     </section>
   );
 };

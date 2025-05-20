@@ -20,26 +20,21 @@ const experiences = [
   },
 ];
 
-interface Props {
-  titleColor: string;
-  contentColor: string;
-}
-
-const Experience = ({ titleColor, contentColor }: Props) => {
+const Experience = () => {
   return (
     <section className="contentSectionsProfile">
-      <h2
-        id="experience"
-        style={{ backgroundColor: contentColor }}
-        className="titlesContents"
-      >
-        {"Experience"}
-      </h2>
-      <article className="Information" style={{ backgroundColor: titleColor }}>
-        {experiences.map((exp, index) => (
-          <ReusableCode key={index} {...exp} />
-        ))}
-      </article>
+      <header>
+        <h2 id="experience" className="titlesContents">
+          {"Experience"}
+        </h2>
+      </header>
+      <section className="Information">
+        <article className="responsive">
+          {experiences.map((exp, index) => (
+            <ReusableCode key={index} {...exp} />
+          ))}
+        </article>
+      </section>
     </section>
   );
 };

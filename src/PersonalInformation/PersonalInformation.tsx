@@ -1,10 +1,5 @@
 import "./index.css";
 
-interface Props {
-  titleColor: string;
-  contentColor: string;
-}
-
 const infoItems = [
   {
     label: "Email",
@@ -25,35 +20,39 @@ const infoItems = [
   },
 ];
 
-const PersonalInformation = ({ titleColor, contentColor }: Props) => {
+const PersonalInformation = () => {
   return (
     <section className="contentSectionsProfile">
-      <h2
-        id="personalInformation"
-        className="titlesContents"
-        style={{ background: titleColor }}
-      >
-        {"Brayan Daniel Reyes Morera"}
-      </h2>
-      <article style={{ background: contentColor }} className="Information">
-        <section className="GridInformation">
-          {infoItems.map(({ label, value, link }) => (
-            <div key={label}>
-              <h3>{label}</h3>
-              <a href={link} target="_blank" rel="noreferrer">
-                <p>{value}</p>
-              </a>
-            </div>
-          ))}
-        </section>
-        <section>
-          <p>
-            {
-              "Desarrollador FrontEnd con más de dos años de experiencia en el diseño y desarrollo de aplicaciones web. Especializado en tecnologías como JavaScript, TypeScript, React, Node.js, MUI, CSS y Docker. Destaco por crear interfaces eficientes y escalables, optimizando la experiencia de usuario y el flujo de trabajo en cada proyecto."
-            }
-          </p>
-        </section>
-      </article>
+      <header>
+        <h2 id="personalInformation" className="titlesContents">
+          {"Brayan Daniel Reyes Morera"}
+        </h2>
+      </header>
+      <section className="Information">
+        <article className="responsive">
+          <section className="GridInformation">
+            {infoItems.map(({ label, value, link }) => (
+              <div key={label}>
+                <h3>{label}</h3>
+                {link ? (
+                  <a href={link} target="_blank" rel="noreferrer">
+                    <p>{value}</p>
+                  </a>
+                ) : (
+                  <p>{value}</p>
+                )}
+              </div>
+            ))}
+          </section>
+          <section>
+            <p>
+              {
+                "Desarrollador FrontEnd con más de dos años de experiencia en el diseño y desarrollo de aplicaciones web. Especializado en tecnologías como JavaScript, TypeScript, React, Node.js, MUI, CSS y Docker. Destaco por crear interfaces eficientes y escalables, optimizando la experiencia de usuario y el flujo de trabajo en cada proyecto."
+              }
+            </p>
+          </section>
+        </article>
+      </section>
     </section>
   );
 };
