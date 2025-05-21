@@ -43,13 +43,13 @@ const Profile = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <main>
+    <section>
       {loading ? (
         <article className="loaderContainer">
           <span className="loader">Load&nbsp;ng</span>
@@ -59,11 +59,14 @@ const Profile = () => {
           <section
             className={`menuProfile ${menuOpen ? "menuOpen" : "menuClosed"}`}
           >
-            <img
-              src="/Brayan.png"
-              alt="Signature uploaded"
-              className="imageProfile"
-            />
+            <section className="nameMobileContainer">
+              <img
+                src="/Brayan.png"
+                alt="Signature uploaded"
+                className="imageProfile"
+              />
+              <p className="nameMobile">Brayan Daniel Reyes Morera</p>
+            </section>
             <section className="profileSection">
               {titles.map(({ title, link }) => (
                 <nav key={title}>
@@ -105,7 +108,7 @@ const Profile = () => {
           </section>
         </section>
       )}
-    </main>
+    </section>
   );
 };
 

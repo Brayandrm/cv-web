@@ -1,24 +1,33 @@
-p{
+p {
   margin: 0;
   color: #676767;
 }
-h1,h2,h3,h4{
+
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
-  color: #544c4c ;
+  color: #544c4c;
 }
-li{
+
+li {
   padding-bottom: 8px;
   text-decoration: none;
 }
-ul,ol{
+
+ul,
+ol {
   margin: 0;
 }
+
 .mainContainer {
   display: flex;
   height: 100svh;
   padding-top: 80px;
   box-sizing: border-box;
-  &{
+
+  & {
     @media (min-width: 1150px) {
       display: grid;
       grid-template-columns: 300px 1fr;
@@ -26,37 +35,41 @@ ul,ol{
     }
   }
 }
+
 .menuProfile {
   display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    gap: 40px;
-    padding-left: 40px;
-    padding-top: 40px;
-    width: 100%;
-    height: 100%;
-    background-color: #333127;
-    transform: translateX(-100%);
-    transition: transform 0.2s ease-in-out;
-    z-index: 1000;
-    box-sizing: border-box;
-  &{
-    @media (min-width: 820px) {
-      width: 300px ;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  background-color: #333127;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease-in-out;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  & {
+    @media (min-width: 815px) {
+      width: 300px;
+      padding-left: 40px;
     }
   }
-  &{
+
+  & {
     @media (min-width: 1150px) {
       display: grid;
-      grid-template-rows: auto 1fr ;
+      grid-template-rows: auto 1fr;
       position: relative;
       transform: none;
       transition: none;
+      padding-top: 40px;
     }
   }
 }
+
 @media (max-width: 1150px) {
   .menuOpen {
     transform: translateX(0);
@@ -67,30 +80,36 @@ ul,ol{
   }
 }
 
-.menuProfile::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  background-color: #5a5a5a; 
-  margin-left: 40px;
+@media (min-width: 815px) {
+  .menuProfile::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #5a5a5a;
+    margin-left: 40px;
+  }
 }
+
 .imageProfile {
   width: 140px;
   height: 140px;
   object-fit: contain;
   padding: 24px;
 }
+
 .profileSection {
   font-size: 24px;
   width: 100%;
 }
+
 nav {
   width: 100%;
 }
-.menuProfileLink{
+
+.menuProfileLink {
   display: block;
   padding: 8px;
   font-size: 18px;
@@ -101,6 +120,7 @@ nav {
   box-sizing: border-box;
   position: relative;
 }
+
 .activeLink::before {
   content: "";
   position: absolute;
@@ -108,39 +128,46 @@ nav {
   top: 0;
   width: 2px;
   height: 100%;
-  background-color: white;
+  background-color: #fff;
 }
+
 .menuProfileLink.activeLink {
   background-color: #464646;
-  color: white;
+  color: #fff;
 }
+
 .menuProfileLink.inactiveLink:hover {
   background-color: #5f5f5f58;
   color: #cfcfcf;
 
 }
+
 .contentSectionsProfile {
   display: flex;
   flex-direction: column;
-  min-height: calc( 100svh - 0px) ;
+  min-height: calc(100svh - 80px);
   border-bottom: 1px solid #676767;
-  &{
+
+  & {
     @media (min-width: 820px) {
-      min-height: inherit ;
+      min-height: inherit;
     }
   }
-  &{
+
+  & {
     @media (min-width: 1250px) {
-      min-height: calc( 100svh - 0px) ;
+      min-height: calc(100svh - 0px);
     }
   }
-  &{
+
+  & {
     @media (min-width: 1720px) {
       min-height: inherit;
     }
   }
 }
-.titlesContents{
+
+.titlesContents {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,56 +178,64 @@ nav {
   word-break: break-word;
   font-size: 36px;
   line-height: 46px;
-  &{
+
+  & {
     @media (min-width: 815px) {
-      font-size: 56px; 
+      font-size: 56px;
       line-height: 66px;
     }
   }
 }
-.Information{
+
+.Information {
   padding-left: 24px;
   padding-right: 24px;
   flex-grow: 1;
   padding-top: 60px;
   padding-bottom: 60px;
   box-sizing: border-box;
-  &{
+
+  & {
     @media (min-width: 1550px) {
       padding-left: 100px;
       padding-right: 100px;
     }
   }
 }
-.scrollableSection{
+
+.scrollableSection {
   overflow-x: hidden;
 }
-.responsive{
-    font-size: 18px;
-    line-height: 28px;
-    color: #676767;
-  &{
+
+.responsive {
+  font-size: 18px;
+  line-height: 28px;
+  color: #676767;
+
+  & {
     @media (min-width: 1620px) {
       padding: 0 calc(50vw - 834px) 110px;
     }
   }
 }
-.scrollableSection > *:nth-child(odd) .titlesContents {
+
+.scrollableSection>*:nth-child(odd) .titlesContents {
   background-color: #DCEBEA;
 }
 
-.scrollableSection > *:nth-child(odd) .Information {
+.scrollableSection>*:nth-child(odd) .Information {
   background-color: #F8FAF9;
 }
 
-.scrollableSection > *:nth-child(even) .titlesContents {
+.scrollableSection>*:nth-child(even) .titlesContents {
   background-color: #F8FAF9;
 }
 
-.scrollableSection > *:nth-child(even) .Information {
+.scrollableSection>*:nth-child(even) .Information {
   background-color: #DCEBEA;
 }
-.btn{
+
+.btn {
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -210,21 +245,25 @@ nav {
   padding: 0;
   background-color: transparent;
   border: none;
-  &{
+
+  & {
     @media (min-width: 820px) {
       display: none;
     }
   }
 }
-.buttonMobile{
+
+.buttonMobile {
   fill: #333127;
-    &{
-      @media (min-width: 820px) {
-        display: none;
-      }
+
+  & {
+    @media (min-width: 820px) {
+      display: none;
     }
+  }
 }
-.headerMobile{
+
+.headerMobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -236,28 +275,61 @@ nav {
   background: #333127;
   width: 100%;
   box-sizing: border-box;
-  &{
+
+  & {
     @media (min-width: 1150px) {
       display: none;
     }
   }
 }
+
 .headerButtonMenu {
-    display: flex;
-    background: transparent;
-    padding: 7px;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  background: transparent;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
 }
-.iconMenu{
+
+.iconMenu {
   width: 50px;
   height: 50px;
   color: #fff;
 }
+
 @media (max-width: 1159px) {
   .blurred {
     filter: blur(4px);
-    pointer-events: none; 
+    pointer-events: none;
     transition: filter 1s ease
+  }
+}
+
+.nameMobileContainer {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #5a5a5a;
+
+  & {
+    @media (min-width: 1150px) {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.nameMobile {
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  & {
+    @media (min-width: 1250px) {
+      display: none;
+    }
   }
 }
