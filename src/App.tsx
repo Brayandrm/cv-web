@@ -64,6 +64,9 @@ const Profile = () => {
                 src="/Brayan.png"
                 alt="Signature uploaded"
                 className="imageProfile"
+                onContextMenu={(e) => {
+                  e.preventDefault();
+                }}
               />
               <p className="nameMobile">Brayan Daniel Reyes Morera</p>
             </section>
