@@ -217,7 +217,7 @@ nav {
   }
 }
 .buttonMobile{
-  fill: #313131;
+  fill: #333127;
     &{
       @media (min-width: 820px) {
         display: none;
@@ -233,7 +233,7 @@ nav {
   align-items: center;
   padding: 0 24px;
   min-height: 80px;
-  background: #313131;
+  background: #333127;
   width: 100%;
   box-sizing: border-box;
   &{
