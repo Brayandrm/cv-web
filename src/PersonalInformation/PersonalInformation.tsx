@@ -15,18 +15,16 @@ const infoItems = [
   },
   {
     label: "web",
-    value: "app.coress.info",
-    link: "https://www.coress.info",
+    value: "cv proximamente",
+    link: "cv proximamente",
   },
 ];
 
 const PersonalInformation = () => {
   return (
-    <section className="contentSectionsProfile">
+    <section id="personalInformation" className="contentSectionsProfile">
       <header>
-        <h2 id="personalInformation" className="titlesContents">
-          {"Brayan Daniel Reyes Morera"}
-        </h2>
+        <h2 className="titlesContents">{"Brayan Daniel Reyes Morera"}</h2>
       </header>
       <section className="Information">
         <article className="responsive">

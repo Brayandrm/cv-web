@@ -22,11 +22,9 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section className="contentSectionsProfile">
+    <section id="experience" className="contentSectionsProfile">
       <header>
-        <h2 id="experience" className="titlesContents">
-          {"Experience"}
-        </h2>
+        <h2 className="titlesContents">{"Experience"}</h2>
       </header>
       <section className="Information">
         <article className="responsive">
