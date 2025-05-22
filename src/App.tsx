@@ -17,7 +17,7 @@ const Profile = () => {
 
   const [loading, setLoading] = useState(true);
 
-  const titles = [
+  const sections = [
     {
       title: "Personal information",
       link: "#personalInformation",
@@ -68,14 +68,18 @@ const Profile = () => {
                   e.preventDefault();
                 }}
               />
-              <p className="nameMobile">Brayan Daniel Reyes Morera</p>
+              <p className="nameMobile">{"Brayan Daniel Reyes Morera"}</p>
             </section>
             <section className="profileSection">
-              {titles.map(({ title, link }) => (
+              {sections.map(({ title, link }) => (
                 <nav key={title}>
                   <a
                     href={link}
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .querySelector(link)
+                        ?.scrollIntoView({ behavior: "smooth" });
                       setSelected(title);
                       setMenuOpen(false);
                     }}

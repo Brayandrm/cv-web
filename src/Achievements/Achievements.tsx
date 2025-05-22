@@ -8,11 +8,9 @@ const AchievementsList = [
 
 const Achievements = () => {
   return (
-    <section className="contentSectionsProfile">
+    <section id="achievements" className="contentSectionsProfile">
       <header>
-        <h2 id="achievements" className="titlesContents">
-          {"Achievements"}
-        </h2>
+        <h2 className="titlesContents">{"Achievements"}</h2>
       </header>
       <section className="Information">
         <article className="responsive">

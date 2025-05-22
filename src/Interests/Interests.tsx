@@ -11,11 +11,9 @@ const Interests = () => {
   ];
 
   return (
-    <section className="contentSectionsProfile">
+    <section id="interests" className="contentSectionsProfile">
       <header>
-        <h2 id="interests" className="titlesContents">
-          {"Interests"}
-        </h2>
+        <h2 className="titlesContents">{"Interests"}</h2>
       </header>
       <article className="Information">
         <div className="InterestsContainer">
