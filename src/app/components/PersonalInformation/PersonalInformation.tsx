@@ -15,8 +15,8 @@ const infoItems = [
   },
   {
     label: "web",
-    value: "cv proximamente",
-    link: "cv proximamente",
+    value: "CV page",
+    link: "cvWeb",
   },
 ];
 
