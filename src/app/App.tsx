@@ -4,8 +4,8 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Profile from "./components/ProfilePage/ProfilePage";
-import CvPage from "./components/Cvpage/CvPage";
+import CvPage from "./pages/Cvpage/CvPage";
+import Profile from "./pages/ProfilePage/ProfilePage";
 
 const App = () => (
   <Router>

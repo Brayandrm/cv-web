@@ -1,0 +1,25 @@
+.contentContainer{
+    padding-bottom: 16px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding-inline: 12px;
+    text-align: justify;
+}
+.dateContainer p{
+    font-size: 11px;
+    color: #000 !important;
+}
+.ItemsContainer{
+    color: #000;
+}
+.titleItems{
+    color: #000;
+    font-size: 16px;
+}
+.sizeUl{
+    color: #3d3d3d;
+    font-size: 13px;
+    padding-inline-start: 16px;
+}
+
