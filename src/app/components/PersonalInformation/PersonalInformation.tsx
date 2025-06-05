@@ -15,7 +15,7 @@ const infoItems = [
   },
   {
     label: "web",
-    value: "CV page",
+    value: "CV Web",
     link: "cvWeb",
   },
 ];
@@ -30,7 +30,7 @@ const PersonalInformation = () => {
         <article className="responsive">
           <section className="GridInformation">
             {infoItems.map(({ label, value, link }) => (
-              <div key={label}>
+              <nav key={label}>
                 <h3>{label}</h3>
                 {link ? (
                   <a href={link} target="_blank" rel="noreferrer">
@@ -39,7 +39,7 @@ const PersonalInformation = () => {
                 ) : (
                   <p>{value}</p>
                 )}
-              </div>
+              </nav>
             ))}
           </section>
           <section>

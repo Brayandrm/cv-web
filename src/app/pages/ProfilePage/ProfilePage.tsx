@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import "../../../App.css";
-import "../Common/Loading/Loading.css";
-import PersonalInformation from "../PersonalInformation/PersonalInformation";
-import Experience from "../Experience/Experience";
-import Education from "../Education/Education";
-import Achievements from "../Achievements/Achievements";
-import Interests from "../Interests/Interests";
+import "../../components/Common/Loading/Loading.css";
+import PersonalInformation from "../../components/PersonalInformation/PersonalInformation";
+import Education from "../../components/Education/Education";
+import Achievements from "../../components/Achievements/Achievements";
+import Interests from "../../components/Interests/Interests";
 import { FaCircleArrowDown, FaCircleArrowUp } from "react-icons/fa6";
 import { IoIosMenu } from "react-icons/io";
 import Icons from "../../../Icons/Icons";
+import Experience from "../../components/Experience/Experience";
 
 const Profile = () => {
   const [selected, setSelected] = useState("Personal information");

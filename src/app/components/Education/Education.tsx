@@ -20,7 +20,7 @@ const educations = [
     ],
   },
   {
-    dateRange: "12/2021 – 01/2022",
+    dateRange: "12/2021 – 12/2022",
     company: "Especialización Frontend Developer",
     role: "Platzi",
     responsibilities: [
