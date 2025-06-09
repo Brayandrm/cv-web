@@ -8,7 +8,7 @@ import CvPage from "./pages/Cvpage/CvPage";
 import Profile from "./pages/ProfilePage/ProfilePage";
 
 const App = () => (
-  <Router>
+  <Router basename="cv-web">
     <Routes>
       <Route path="/" element={<Navigate to="/profilePage" replace />} />
       <Route path="/profilePage" element={<Profile />} />
