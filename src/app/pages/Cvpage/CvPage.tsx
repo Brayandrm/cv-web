@@ -54,7 +54,7 @@ const CvPage = () => (
               </section>
             </article>
             <img
-              src="/Brayan.png"
+              src="/cv-web/Brayan.png"
               alt="Signature uploaded"
               className="imageProfile"
               onContextMenu={(e) => {
