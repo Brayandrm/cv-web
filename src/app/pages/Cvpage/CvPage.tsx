@@ -1,5 +1,5 @@
 import CodeCv from "../../components/Common/CodeCv/CodeCv";
-import { Profile } from "../../resources/resources";
+import { Profile } from "../../resources/profile";
 import "./index.css";
 
 const CvPage = () => (

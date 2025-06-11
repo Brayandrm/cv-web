@@ -1,24 +1,5 @@
+import { InfoItems } from "../../resources/personalInformation";
 import "./index.css";
-
-const infoItems = [
-  {
-    label: "Email",
-    value: "rmbd0603@gmail.com",
-  },
-  {
-    label: "Address",
-    value: "Carrera 104 a numero 56 F 44 Sur",
-  },
-  {
-    label: "Phone number",
-    value: "3124211748",
-  },
-  {
-    label: "web",
-    value: "CV Web",
-    link: "cvWeb",
-  },
-];
 
 const PersonalInformation = () => {
   return (
@@ -29,7 +10,7 @@ const PersonalInformation = () => {
       <section className="Information">
         <article className="responsive">
           <section className="GridInformation">
-            {infoItems.map(({ label, value, link }) => (
+            {InfoItems.map(({ label, value, link }) => (
               <nav key={label}>
                 <h3>{label}</h3>
                 {link ? (

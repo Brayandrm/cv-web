@@ -1,15 +1,7 @@
+import { InterestList } from "../../resources/Interests";
 import "./index.css";
 
 const Interests = () => {
-  const interestList = [
-    "Tegnologia",
-    "Basket Ball",
-    "Matematicas",
-    "Natación",
-    "Culinaria",
-    "Gastronomia",
-  ];
-
   return (
     <section id="interests" className="contentSectionsProfile">
       <header>
@@ -17,7 +9,7 @@ const Interests = () => {
       </header>
       <article className="Information">
         <div className="InterestsContainer">
-          {interestList.map((list, index) => (
+          {InterestList.map((list, index) => (
             <p className="InterestsList" key={index}>
               # {list}
             </p>
