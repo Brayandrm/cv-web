@@ -14,7 +14,7 @@ const CodeCv = (props: Props) => {
         <p>{props.date}</p>
         <p> {props.company} </p>
       </section>
-      <section className="ItemsContainer">
+      <section>
         <h3 className="titleItems"> {props.type} </h3>
         <ul className="sizeUl">
           {props.content.map((li, index: number) => (

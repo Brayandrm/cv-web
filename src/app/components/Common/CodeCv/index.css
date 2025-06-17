@@ -6,15 +6,10 @@
     padding-inline: 12px;
     text-align: justify;
 }
-.dateContainer p{
+.dateContainer{
     font-size: 11px;
-    color: #000 !important;
-}
-.ItemsContainer{
-    color: #000;
 }
 .titleItems{
-    color: #000;
     font-size: 16px;
 }
 .sizeUl{
