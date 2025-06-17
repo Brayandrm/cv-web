@@ -3,11 +3,23 @@ export const Profile = [
         title: "Experience",
         items: [
             {
+                date: "01/2025 - Presente",
+                company: "Coress",
+                type: "Front-End Developer",
+                content: [
+                    "Desarrollo de KYC.",
+                    "Firmas de contratos.",
+                    "generación de documentos con CMS."
+                ],
+            },
+            {
                 date: "11/2023 - 12/2024",
                 company: "Coress",
-                type: "Desarrollador Junior Frontend",
+                type: "Desarrollador Junior Front-End",
                 content: [
-                    "Coress, un startup de real state. En mi tiempo implemento funcionalidades claves y mejoras de la interfaz de usuario utilizando tecnologías como React.js, React Query, Zustand, TypeScript, MUI, Styled-components, y Next.js.Participé en la planificación y ejecución de tareas, con experiencia en herramientas como Git, Jira.",
+                    "Implementación de funcionalidades esenciales y optimización de la interfaz de usuario con React.js, React Query, Zustand, TypeScript, MUI, Styled-components y Next.js.",
+                    "Participación activa en la planificación y ejecución de tareas.",
+                    "Manejo avanzado de herramientas de colaboración y versionado como Git y Jira."
                 ],
             },
             {
@@ -45,7 +57,7 @@ export const Profile = [
             {
                 date: "2022 - 2023",
                 company: "Platzi",
-                type: "Especialización Frontend Developer",
+                type: "Desarrollo Front End Con React.Js",
                 content: ["HTML", "CSS", "JAVASCRIPT", "REACT", "VUE.JS", "GIT-GITHUB"],
             },
         ],

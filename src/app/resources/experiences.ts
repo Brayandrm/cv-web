@@ -1,14 +1,26 @@
 export const Experiences = [
   {
-    dateRange: "11/2023 – 12/2024",
+    dateRange: "01/2025 - Presente",
     company: "CORESS",
-    role: "Desarrollador Junior Frontend ",
+    role: "Front-End developer",
     responsibilities: [
-      "Coress, un startup de real state. En mi tiempo implemento funcionalidades claves y mejoras de la interfaz de usuario utilizando tecnologías como React.js, React Query, Zustand, TypeScript, MUI, Styled-components, y Next.js.Participé en la planificación y ejecución de tareas, con experiencia en herramientas como Git, Jira.",
+      "Desarrollo de KYC.",
+      "Firmas de contratos.",
+      "generación de documentos con CMS."
     ],
   },
   {
-    dateRange: "12/2022 – 10/2023",
+    dateRange: "11/2023 - 12/2024",
+    company: "CORESS",
+    role: "Desarrollador Junior Front-End ",
+    responsibilities: [
+      "Implementación de funcionalidades esenciales y optimización de la interfaz de usuario con React.js, React Query, Zustand, TypeScript, MUI, Styled-components y Next.js.",
+      "Participación activa en la planificación y ejecución de tareas.",
+      "Manejo avanzado de herramientas de colaboración y versionado como Git y Jira."
+    ],
+  },
+  {
+    dateRange: "12/2022 - 10/2023",
     company: "PTC(Aeronova)",
     role: "Desarrollador Junior Freelance",
     responsibilities: [
