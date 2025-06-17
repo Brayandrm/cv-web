@@ -5,7 +5,7 @@ import "./index.css";
 const CvPage = () => (
   <>
     <div className="splash">
-      <div className="splash_logo">Cv web</div>
+      <div className="splash_logo">{"Cv web"}</div>
       <div className="splash_svg">
         <svg>
           <rect />
