@@ -19,12 +19,6 @@ const CvPage = () => (
     </div>
     <div className="containerText">
       <div className="text">
-        {/* <div className="containerTriangle">
-          <div className="corner-yellow"></div>
-        </div>
-        <div className="containerTriangleFooter">
-          <div className="corner-blue"></div>
-        </div> */}
         <section className="containerContent">
           <section className="FooterInformation">
             <article className="information">

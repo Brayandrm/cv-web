@@ -27,8 +27,8 @@ export const Profile = [
                 company: "PTC(Aeronova).",
                 type: "Desarrollador Junior Freelance",
                 content: [
-                    "Colaboré en el desarrollo de un sistema de gestión para una academia de vuelo utilizando tecnologías modernas como JavaScript, React, Node, MUI y CSS.Implementé funcionalidades clave, mejoras de interfaz de usuario, contribuyendo al éxito general del proyecto.",
-                    "Trabajé en estrecha colaboración con el equipo de desarrollo para garantizar la coherencia del código y la eficiencia del flujo de trabajo. Utilicé Docker para la creación y administración de entornos de desarrollo y despliegue, asegurando una ejecución sin problemas en diferentes plataformas.",
+                    "Participé en el desarrollo de un sistema de gestión para una academia de vuelo usando JavaScript, React, Node, MUI y CSS. ",
+                    "Implementé funciones clave y mejoras en la interfaz. Trabajé con el equipo para mantener un código consistente y un flujo de trabajo eficiente."
                 ],
             },
         ],
