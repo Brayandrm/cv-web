@@ -76,7 +76,7 @@ const Profile = () => {
           >
             <section className="nameMobileContainer">
               <img
-                src="/cv-web/Brayan.png"
+                src="/cv-web/profile.png"
                 alt="Signature uploaded"
                 className="imageProfile"
                 onContextMenu={(e) => {
