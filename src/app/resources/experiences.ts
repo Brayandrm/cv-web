@@ -24,8 +24,8 @@ export const Experiences = [
     company: "PTC(Aeronova)",
     role: "Desarrollador Junior Freelance",
     responsibilities: [
-      "Colaboré en el desarrollo de un sistema de gestión para una academia de vuelo utilizando tecnologías modernas como JavaScript, React, Node, MUI y CSS.",
-      "Trabajé en estrecha colaboración con el equipo de desarrollo para garantizar la coherencia del código y la eficiencia del flujo de trabajo.",
+      "Participé en el desarrollo de un sistema de gestión para una academia de vuelo usando JavaScript, React, Node, MUI y CSS. ",
+      "Implementé funciones clave y mejoras en la interfaz. Trabajé con el equipo para mantener un código consistente y un flujo de trabajo eficiente."
     ],
   },
 ];

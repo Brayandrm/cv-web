@@ -1,6 +1,6 @@
 export const Profile = [
     {
-        title: "Experience",
+        title: "Experiencia",
         items: [
             {
                 date: "01/2025 - Presente",
@@ -34,7 +34,7 @@ export const Profile = [
         ],
     },
     {
-        title: "Education",
+        title: "Educación",
         items: [
             {
                 date: "2024 - Presente",

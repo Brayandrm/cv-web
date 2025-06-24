@@ -57,7 +57,7 @@ const CvPage = () => (
             />
           </section>
           <section className="contentCv">
-            <h3 className="titleCvWeb">{"Profile"}</h3>
+            <h3 className="titleCvWeb">{"Perfil"}</h3>
             <hr className="hr" />
             <p className="contentCbProfile">
               {
