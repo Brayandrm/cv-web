@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <section id="education" className="contentSectionsProfile">
       <header>
-        <h2 className="titlesContents">{"Education"}</h2>
+        <h2 className="titlesContents">{"Educación"}</h2>
       </header>
       <section className="Information">
         <article className="responsive">

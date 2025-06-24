@@ -21,27 +21,27 @@ const Profile = () => {
 
   const sections = [
     {
-      title: "Personal information",
+      title: "Información personal",
       link: "#personalInformation",
       Component: PersonalInformation,
     },
     {
-      title: "Experience",
+      title: "Experiencia",
       link: "#experience",
       Component: Experience,
     },
     {
-      title: "Education",
+      title: "Educación",
       link: "#education",
       Component: Education,
     },
     {
-      title: "Achievements",
+      title: "Logros",
       link: "#achievements",
       Component: Achievements,
     },
     {
-      title: "Interests",
+      title: "Intereses",
       link: "#interests",
       Component: Interests,
     },

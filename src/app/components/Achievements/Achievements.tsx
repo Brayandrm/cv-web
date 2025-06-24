@@ -1,10 +1,10 @@
-import { AchievementsList } from "../../resources/Achievements";
+import { AchievementsList } from "../../resources/achievements";
 
 const Achievements = () => {
   return (
     <section id="achievements" className="contentSectionsProfile">
       <header>
-        <h2 className="titlesContents">{"Achievements"}</h2>
+        <h2 className="titlesContents">{"Logros"}</h2>
       </header>
       <section className="Information">
         <article className="responsive">

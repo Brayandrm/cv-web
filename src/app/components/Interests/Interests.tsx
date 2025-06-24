@@ -1,11 +1,11 @@
-import { InterestList } from "../../resources/Interests";
+import { InterestList } from "../../resources/interests";
 import "./index.css";
 
 const Interests = () => {
   return (
     <section id="interests" className="contentSectionsProfile">
       <header>
-        <h2 className="titlesContents">{"Interests"}</h2>
+        <h2 className="titlesContents">{"Intereses"}</h2>
       </header>
       <article className="Information">
         <div className="InterestsContainer">
