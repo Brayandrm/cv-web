@@ -26,7 +26,7 @@ const CvPage = () => (
               <section className="contactUser">
                 <p className="contact">
                   <strong>{"Dirección"}:</strong>
-                  {" Carrera 104 a numero 56 f 44 Sur"}
+                  {" Carrera 104 a numero 56 F - 44 Sur"}
                 </p>
                 <p className="contact">
                   <strong>{"Numero de telefono"}:</strong> {"3124211749"}

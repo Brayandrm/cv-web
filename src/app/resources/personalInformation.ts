@@ -1,14 +1,14 @@
 export const InfoItems = [
   {
-    label: "Email",
+    label: "Correo electronico",
     value: "rmbd0603@gmail.com",
   },
   {
-    label: "Address",
-    value: "Carrera 104 a numero 56 F 44 Sur",
+    label: "Dirección",
+    value: "Carrera 104 a numero 56 F - 44 Sur",
   },
   {
-    label: "Phone number",
+    label: "Celular",
     value: "3124211748",
   },
   {
