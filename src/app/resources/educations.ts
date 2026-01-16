@@ -1,7 +1,6 @@
-
 export const Educations = [
   {
-    dateRange: "07/2024 – Present",
+    dateRange: "07/2024 – 11/2024",
     company: "Front End Developer",
     role: "Digital House",
     responsibilities: [
@@ -20,7 +19,7 @@ export const Educations = [
   },
   {
     dateRange: "12/2021 – 12/2022",
-    company: "Especialización Frontend Developer",
+    company: "Desarrollo Front End Con React.Js",
     role: "Platzi",
     responsibilities: [
       "HTML",
