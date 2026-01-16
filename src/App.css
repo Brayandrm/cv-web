@@ -133,7 +133,7 @@ nav {
 
 .menuProfileLink.activeLink {
   background-color: #464646;
-  color: red;
+  color: #ffffff;
 }
 
 .menuProfileLink.inactiveLink:hover {
